@@ -14,7 +14,7 @@ Playground repo for [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspir
 
 ## Getting started
 
-Install .NET Aspire workload for Visual Studio (optional):
+Install .NET Aspire workload:
 ```bash
 dotnet workload install aspire
 ```
@@ -22,6 +22,11 @@ dotnet workload install aspire
 Clone and run the app:
 ```bash
 git clone https://github.com/sgbj/aspire-demo.git
-cd aspire-demo
-dotnet run --project AspireDemo.AppHost
+cd aspire-demo/AspireDemo.AppHost
+dotnet run
+```
+
+Deployment manifest:
+```bash
+dotnet run --publisher manifest --output-path aspire-manifest.json
 ```
